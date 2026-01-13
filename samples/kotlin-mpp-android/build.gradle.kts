@@ -26,11 +26,11 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 
-    flavorDimensions("beer")
+    flavorDimensions += "beer"
     productFlavors {
         register("weissbier")
         register("kellerbier")
