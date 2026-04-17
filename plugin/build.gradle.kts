@@ -40,17 +40,18 @@ ktlint {
 
 tasks.withType<KotlinCompile> {
     compilerOptions {
-        languageVersion.set(KotlinVersion.KOTLIN_1_8)
-        apiVersion.set(KotlinVersion.KOTLIN_1_8)
-        jvmTarget.set(JvmTarget.JVM_1_8)
+        languageVersion.set(KotlinVersion.KOTLIN_2_1)
+        apiVersion.set(KotlinVersion.KOTLIN_2_1)
+        jvmTarget.set(JvmTarget.JVM_11)
     }
 }
 
 dependencies {
-    compileOnly("com.pinterest.ktlint:ktlint-cli-reporter-core:1.0.0")
-    compileOnly("com.pinterest.ktlint:ktlint-rule-engine:1.0.0")
-    compileOnly("com.pinterest.ktlint:ktlint-ruleset-standard:1.0.0")
-    compileOnly("com.pinterest.ktlint:ktlint-cli-reporter-baseline:1.0.0")
+    compileOnly(platform(libs.ktlint.bom))
+    compileOnly(libs.ktlint.cli.reporter.core)
+    compileOnly(libs.ktlint.rule.engine)
+    compileOnly(libs.ktlint.ruleset.standard)
+    compileOnly(libs.ktlint.cli.reporter.baseline)
     compileOnly(libs.kotlin.gradle.plugin)
     compileOnly(libs.android.gradle.plugin)
     compileOnly(kotlin("stdlib-jdk8"))
@@ -96,7 +97,7 @@ testing {
         named<JvmTestSuite>("test") {
             useJUnitJupiter()
         }
-        listOf(8, 11, 17, 21, 25)
+        listOf(11, 17, 21, 25)
             .forEach {
                 register<JvmTestSuite>("test$it") {
                     extendFromTest()

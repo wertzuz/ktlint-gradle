@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+- Update dependencies, minimum version requirements and modernize code [#1027](https://github.com/JLLeitschuh/ktlint-gradle/pull/1027)
 ## [14.0.1] - 2025-11-10
 
 - Update build to work with gradle 9.1 and Java 25 [#962](https://github.com/JLLeitschuh/ktlint-gradle/pull/962)

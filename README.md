@@ -66,7 +66,7 @@ Minimal supported [Gradle](https://www.gradle.org) version: `7.4`
 
 Minimal supported [Kotlin](https://kotlinlang.org) version: `1.4`
 
-Minimal supported [ktlint](https://github.com/pinterest/ktlint) version: `0.47.1`
+Minimal supported [ktlint](https://github.com/pinterest/ktlint) version: `1.0.1`
 
 Minimal supported [Android Gradle plugin](https://developer.android.com/build) version: `4.1.0`
 

@@ -1,15 +1,15 @@
 [versions]
-kotlin = "1.5.31"
-ktlint = "1.0.0"
-androidPlugin = "4.1.0"
-semver = "1.1.1"
+kotlin = "2.3.20"
+ktlint = "1.0.1"
+androidPlugin = "7.0.4"
+semver = "2.1.0"
 jgit = "5.13.3.202401111512-r"
 sl4fj = "2.0.17"
 gradleWrapper = "9.1.0"
 gradleWrapperSha = "a17ddd85a26b6a7f5ddb71ff8b05fc5104c0202c6e64782429790c933686c806"
-assertJ = "3.27.4"
-commonsIo = "2.17.0"
-archUnit = "1.4.0"
+assertJ = "3.27.7"
+commonsIo = "2.21.0"
+archUnit = "1.4.1"
 
 [libraries]
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidPlugin" }
@@ -20,6 +20,10 @@ jgit = { module = "org.eclipse.jgit:org.eclipse.jgit", version.ref = "jgit" }
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 kotlin-script-runtime = { module = "org.jetbrains.kotlin:kotlin-script-runtime", version.ref = "kotlin" }
+ktlint-bom = { module = "com.pinterest.ktlint:ktlint-bom", version.ref = "ktlint" }
+ktlint-cli-reporter-core = { module = "com.pinterest.ktlint:ktlint-cli-reporter-core" }
+ktlint-cli-reporter-baseline = { module = "com.pinterest.ktlint:ktlint-cli-reporter-baseline" }
+ktlint-ruleset-standard = { module = "com.pinterest.ktlint:ktlint-ruleset-standard" }
 ktlint-rule-engine = { module = "com.pinterest.ktlint:ktlint-rule-engine", version.ref = "ktlint" }
 semver = { module = "net.swiftzer.semver:semver", version.ref = "semver" }
 slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "sl4fj" }
